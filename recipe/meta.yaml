@@ -1,14 +1,14 @@
 {% set name = "idds-common" %}
 {% set name_pypi = "idds_common" %}
-{% set version = "2.6.11" %}
+{% set version = "2.6.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/8b/f3/7e1973b30d468e3d782523a4ddb50e8b063ede0fa13e079a18c20e160bf4/idds_common-2.6.11-py3-none-any.whl
-  sha256: fab90ab69b7c911c6c0dfe9a36af8cd557193fe94dccbbbab443d3d55ba40df7
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name_pypi }}/{{ name_pypi }}-{{ version }}.tar.gz
+  sha256: 904e47a7cd4e6ebe5713f49429382efd154350a2c38ad7aff423a65569ddd92d
 
 build:
   number: 1
