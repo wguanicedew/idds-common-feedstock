@@ -1,14 +1,14 @@
 {% set name = "idds-common" %}
 {% set name_pypi = "idds_common" %}
-{% set version = "2.4.1" %}
+{% set version = "2.6.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name_pypi }}/{{ name_pypi }}-{{ version }}.tar.gz
-  sha256: 80ea9c8edce6a015e1acf3b9498afb71d41c1c962b19ed50bcc284b5bc373bb6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name_pypi }}/{{ name_pypi }}-{{ version }}-py3-none-any.whl
+  sha256: fab90ab69b7c911c6c0dfe9a36af8cd557193fe94dccbbbab443d3d55ba40df7
 
 build:
   number: 1
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://pypi.org/project/idds-common/
-  summary: intelligent Data Delivery Service(iDDS) Package
+  summary: intelligent Distributed Dispatch and Scheduling (iDDS) Package
   dev_url: https://github.com/HSF/iDDS
   license: Apache-2.0
   license_file: LICENSE.rst
